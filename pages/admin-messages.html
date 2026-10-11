@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALA | Admin Messages</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="admin-header">
+        <a href="../index.html" class="admin-logo">SALA</a>
+        <span>ADMIN DASHBOARD</span>
+    </header>
+
+    <main class="admin-container">
+        <section class="admin-intro">
+            <p class="admin-eyebrow">SALA MANAGEMENT</p>
+            <h1>Customer Messages</h1>
+            <p>Manage inquiries from your guests.</p>
+        </section>
+
+        <section class="admin-summary">
+            <div class="admin-summary-card">
+                <span>Total Messages</span>
+                <h2 id="total-messages">0</h2>
+            </div>
+
+            <div class="admin-summary-card">
+                <span>Latest Inquiry</span>
+                <h2 id="latest-message">—</h2>
+            </div>
+        </section>
+
+        <section class="admin-messages-section">
+            <div class="admin-section-heading">
+                <h2>All Messages</h2>
+                <button id="refresh-messages" type="button">
+                    Refresh
+                </button>
+            </div>
+
+            <p id="admin-status" role="status">
+                Messages will appear here.
+            </p>
+
+            <div id="messages-list" class="admin-messages-list">
+                <!-- Messages will be displayed here later. -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>

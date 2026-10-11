@@ -1,0 +1,11 @@
+# Private environment variables
+.env
+**/.env
+
+# Installed packages
+node_modules/
+**/node_modules/
+
+# Logs and system files
+*.log
+.DS_Store

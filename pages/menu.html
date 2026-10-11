@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Menu | SALA Modern Thai Kitchen</title>
+
+    <!-- Reuse the main website stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    
+<!-- NAVIGATION -->
+<header class="navbar">
+    <div class="container">
+
+        <a href="../index.html" class="logo">SALA</a>
+
+        <nav class="nav-menu">
+            <a href="../index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="our-story.html">Our Story</a>
+            <a href="../index.html#experience">Experience</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+
+        <a href="../index.html#reservation" class="nav-button">
+            Reserve
+        </a>
+
+        <button
+            class="menu-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            type="button"
+        >
+            ☰
+        </button>
+
+    </div>
+</header>
+
+
+
+    <!-- MENU INTRODUCTION -->
+    <main>
+
+        <section class="menu-hero">
+            <p class="section-label">A TASTE OF THAILAND</p>
+
+            <h1>Our Menu</h1>
+
+            <p>
+                Traditional Thai flavors, thoughtful ingredients,
+                and a modern touch in every dish.
+            </p>
+        </section>
+
+
+        <!-- MENU CONTENT -->
+        <section class="full-menu">
+
+            <div class="menu-heading">
+                <p class="section-label">MADE WITH CARE</p>
+                <h2>Explore Our Dishes</h2>
+                <p>
+                    From the first bite to the final sweet note.
+                </p>
+            </div>
+
+
+            <!-- CATEGORY FILTER BUTTONS -->
+            <div class="menu-categories">
+
+                <button
+                    type="button"
+                    class="category-button active"
+                    data-category="all"
+                >
+                    All Dishes
+                </button>
+
+                <button
+                    type="button"
+                    class="category-button"
+                    data-category="starters"
+                >
+                    Starters
+                </button>
+
+                <button
+                    type="button"
+                    class="category-button"
+                    data-category="mains"
+                >
+                    Main Courses
+                </button>
+
+                <button
+                    type="button"
+                    class="category-button"
+                    data-category="desserts"
+                >
+                    Desserts
+                </button>
+
+            </div>
+
+
+            <!-- DISHES WILL LOAD FROM OUR BACKEND -->
+            <div class="menu-grid menu-list">
+                <p>Loading menu...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="../index.html" class="logo">SALA</a>
+
+        <p>Thai flavors, reimagined.</p>
+
+        <p>© 2026 SALA Modern Thai Kitchen</p>
+    </footer>
+
+
+    <!-- REUSE OUR EXISTING JAVASCRIPT -->
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
