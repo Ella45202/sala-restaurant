@@ -1,54 +1,21 @@
 
-// ========================================
-// SALA — MYSQL DATABASE CONNECTION
-// ========================================
-
 const mysql = require("mysql2");
 
-
-// ========================================
-// CREATE DATABASE CONNECTION
-// ========================================
-
 const db = mysql.createConnection({
-
-    host: "localhost",
-
-    user: "root",
-
-    password: "",
-
-    database: "sala_restaurant"
-
+    host: process.env.DB_HOST || "localhost",
+    user: process.env.DB_USER || "root",
+    password: process.env.DB_PASSWORD || "",
+    database: process.env.DB_NAME || "sala_restaurant",
+    port: Number(process.env.DB_PORT) || 3306
 });
-
-
-// ========================================
-// CONNECT TO MYSQL
-// ========================================
 
 db.connect((error) => {
-
     if (error) {
-
-        console.error(
-            "MySQL connection failed:",
-            error.message
-        );
-
+        console.error("MySQL connection failed:", error.message);
         return;
-
     }
 
-    console.log(
-        "Connected to MySQL database!"
-    );
-
+    console.log("Connected to MySQL database!");
 });
-
-
-// ========================================
-// EXPORT DATABASE CONNECTION
-// ========================================
 
 module.exports = db;
